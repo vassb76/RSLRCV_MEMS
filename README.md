@@ -3,7 +3,7 @@
 
 ### 1. Projekt kiválasztása
 
-Vizsgafeladnak egy testtömeg alapján működő automata száraztáp adagoló berendezés modelljét választottam. Az alapgondolat onnét eredt, hogy családon belül problémát szokott okozni, hogy éppen ki eteti a macskát, miért üres a tányérja, túl sok táp lett kiadagolva, stb. Az adagoló hasonlóan működne gyermekeim forgó lapátkereskes műzli adagoló berendezéséhez. (lsd. 1. kép)![Műzliadagoló](https://github.com/vassb76/RSLRCV_MEMS/blob/master/M%C5%B1zliadagol%C3%B3.png "1. kép Műzliadagoló")
+Vizsgafeladatnak egy testtömeg alapján működő automata száraztáp adagoló berendezés modelljét választottam. Az alapgondolat onnét eredt, hogy családon belül problémát szokott okozni, hogy éppen ki eteti a macskát, miért üres a tányérja, túl sok táp lett kiadagolva, stb. Az adagoló hasonlóan működne gyermekeim forgó lapátkereskes műzli adagoló berendezéséhez. (lsd. 1. kép)![Műzliadagoló](https://github.com/vassb76/RSLRCV_MEMS/blob/master/M%C5%B1zliadagol%C3%B3.png "1. kép Műzliadagoló")
 
 ### 2. Hardver és szoftverkörnyezet, szenzorok, motor kiválasztása
 
@@ -39,10 +39,13 @@ A tápadagoló prototípus összeállításának megtervezését a Fritzing (htt
 
 ![Fritzing](https://github.com/vassb76/RSLRCV_MEMS/blob/master/MEMS4b_bb.png)
 
-A Fritzing-ben megtervezett modell tényleges megvalósítása.
+A Fritzing-ben megtervezett modell tényleges megvalósítása:
 
 ![Proto](https://github.com/vassb76/RSLRCV_MEMS/blob/master/Protot%C3%ADpus.png)
 
 
-### 4. A prototípust működtető kód.
+### 4. A prototípust működtető kód
+
+A modell működtetését Python3-ban írt kóddal valósítottam meg, Raspbian Buster operációs rendszer alatt. A kódban felhasználásra került a HX711 ADC-hez Marcel Zak által megírt függvénykönyvtár ([link](https://github.com/gandalf15/HX711)).
+Az ötletadó műzliadagoló 6-os osztású lapátkerékkel működik, így a kódban is 6 tömegkategóriát határoztam meg. Az adagok a táp ajánlása alapján lettek meghatározva, ami megadja, hogy mennyi táp az ideális testömeg kg-onként naponta.
 
