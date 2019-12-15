@@ -1,1 +1,14 @@
-# RSLRCV_MEMS
+# GKLB_INTM020-Mikroelektromechanikai rendszerek tárgy vizsgafeladata.
+## Passzív infra mozgásérzékőlős, tömegmérésen alapuló automata tápadagoló.
+
+### 1. Projekt kiválasztása.
+
+Vizsgafeladnak egy testtömeg alapján működő automata száraztáp adagoló berendezés modelljét választottam. Az alapgondolat onnét eredt, hogy családon belül problémát szokott okozni, hogy éppen ki eteti a macskát, miért üres a tányérja, túl sok táp lett kiadagolva, stb. Az adagoló működési elve hasonlóan működne gyermekeim forgó lapátkereskes műzli adagoló berendezéséhez. (lsd. 1. kép)![Műzliadagoló](https://github.com/vassb76/RSLRCV_MEMS/blob/master/M%C5%B1zliadagol%C3%B3.png "1. kép Műzliadagoló")
+
+### 2. Hardver és szoftverkörnyezet, szenzorok, motor kiválasztása.
+
+A projekt kivitelezéséhez Raspberry Pi egykártyás számítógépet választottam, a rendszert működtető programot Python3 nyelven szerkesztettem.
+
+#### Az elgondolás megvalósításához szükséges elemek kiválasztása:
+* Termodinamikai szenzor
+A macska testhőjének érzékelését egy
