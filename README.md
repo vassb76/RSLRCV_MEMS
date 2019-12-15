@@ -7,7 +7,7 @@ Vizsgafeladnak egy testtömeg alapján működő automata száraztáp adagoló b
 
 ### 2. Hardver és szoftverkörnyezet, szenzorok, motor kiválasztása.
 
-A projekt kivitelezéséhez Raspberry Pi egykártyás számítógépet választottam, a rendszert működtető programot Python3 nyelven szerkesztettem.
+A projekt kivitelezéséhez Raspberry Pi egykártyás számítógépet választottam, a rendszert működtető programot Python3 nyelven szerkesztettem. A modellhez forrasztás nélküli próbapanelt választottam, amit a Pi 40 tűs GPIO-jához egy T-csatlakozóval illesztettem.
 
 #### Az elgondolás megvalósításához szükséges elemek kiválasztása:
 * Termodinamikai szenzor
@@ -32,4 +32,17 @@ A motor vezérlését egy ULN2003 alapú meghajtó PCB végzi. [ULN2003](https:/
 
 ![Stepper](https://github.com/vassb76/RSLRCV_MEMS/blob/master/Stepper.jpg)
 ![ULN2003](https://github.com/vassb76/RSLRCV_MEMS/blob/master/ULN2003.jpg)
+
+#### A modell fizikai összeállítása.
+
+A tápadagoló prototípus összeállításának megtervezését a Fritzing (https://fritzing.org/home/) alkalmazással készítettem el. Az összetevők áramfelvétele nem tette szükségesség külső táp beépítését, a Raspberry két 5V-os, illetve egy 3,3V-os tápcsatlakozója elégséges volt a prototípus működéséhez.
+
+![Fritzing](https://github.com/vassb76/RSLRCV_MEMS/blob/master/MEMS4b_bb.png)
+
+A Fritzing-ben megtervezett modell tényleges megvalósítása.
+
+![Proto](https://github.com/vassb76/RSLRCV_MEMS/blob/master/Protot%C3%ADpus.png)
+
+
+#### A prototípust működtető kód.
 
