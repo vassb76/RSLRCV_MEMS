@@ -7,7 +7,7 @@ Vizsgafeladatnak egy testtömeg alapján működő automata száraztáp adagoló
 
 ### 2. Hardver és szoftverkörnyezet, szenzorok, motor kiválasztása
 
-A projekt kivitelezéséhez Raspberry Pi egykártyás számítógépet választottam, a rendszert működtető programot Python3 nyelven szerkesztettem. A modellhez forrasztás nélküli próbapanelt választottam, amit a Pi 40 tűs GPIO-jához egy T-csatlakozóval illesztettem.
+A projekt kivitelezéséhez Raspberry Pi 4 Model B egykártyás számítógépet választottam, a rendszert működtető programot Python3 nyelven szerkesztettem. A modellhez forrasztás nélküli próbapanelt választottam, amit a Pi 40 tűs GPIO-jához egy T-csatlakozóval illesztettem.
 
 #### Az elgondolás megvalósításához szükséges elemek kiválasztása
 * Termodinamikai szenzor
