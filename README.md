@@ -41,7 +41,7 @@ A tápadagoló prototípus összeállításának megtervezését a Fritzing (htt
 
 A Fritzing-ben megtervezett modell tényleges megvalósítása:
 
-![Proto](https://github.com/vassb76/RSLRCV_MEMS/blob/master/Protot%C3%ADpus.png)
+![Proto](https://github.com/vassb76/RSLRCV_MEMS/blob/master/Prototipus.png)
 
 
 ### 4. A prototípust működtető kód
@@ -78,7 +78,7 @@ pir_sensor = 27
 
 GPIO.setup(pir_sensor, GPIO.IN)
 
-hx = HX711(dout_pin=12, pd_sck_pin=16, channel='A', gain=64)
+hx = HX711(dout_pin=12, pd_sck_pin=16, select_channel='A', gain_channel_A=64)
 
 current_state = 0
 
@@ -98,7 +98,7 @@ try:
                         for pin in range(4):
                             GPIO.output(control_pins[pin], halfstep_seq[halfstep][pin])
                         time.sleep(0.001)
-                time.sleep(600)
+                time.sleep(21600)
     
             elif tomeg > 800 and tomeg <= 1600:
                 for i in range(170):
@@ -106,7 +106,7 @@ try:
                         for pin in range(4):
                             GPIO.output(control_pins[pin], halfstep_seq[halfstep][pin])
                         time.sleep(0.001)
-                time.sleep(600)
+                time.sleep(21600)
     
             elif tomeg > 1600 and tomeg <= 2400:
                 for i in range(255):
@@ -114,7 +114,7 @@ try:
                         for pin in range(4):
                             GPIO.output(control_pins[pin], halfstep_seq[halfstep][pin])
                         time.sleep(0.001)
-                time.sleep(600)
+                time.sleep(21600)
     
             elif tomeg > 2400 and tomeg <= 3200:
                 for i in range(340):
@@ -122,7 +122,7 @@ try:
                         for pin in range(4):
                             GPIO.output(control_pins[pin], halfstep_seq[halfstep][pin])
                         time.sleep(0.001)
-                time.sleep(600)
+                time.sleep(21600)
                         
             elif tomeg > 3200 and tomeg <= 4000:
                 for i in range(426):
@@ -130,7 +130,7 @@ try:
                         for pin in range(4):
                             GPIO.output(control_pins[pin], halfstep_seq[halfstep][pin])
                         time.sleep(0.001)
-                time.sleep(600)
+                time.sleep(21600)
             
             else:
                 for i in range(512):
@@ -138,11 +138,11 @@ try:
                         for pin in range(4):
                             GPIO.output(control_pins[pin], halfstep_seq[halfstep][pin])
                         time.sleep(0.001)
-                time.sleep(600)
+                time.sleep(21600)
 
 except KeyboardInterrupt:
     pass
 
 finally:
-    GPIO.cleanup()  
+    GPIO.cleanup()
 ```
