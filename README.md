@@ -5,4 +5,4 @@ Ez a projekt egy modellszintű megvalósítása egy kisálllat száraztáp adago
 
 A megvalósítási dokumentációt a Wiki oldalakon találjátok.
 
-A modellben szereplő hardverelemek gyártói adatlapjai az "adalapok" brancben megtekinthetőek.
+A modellben szereplő hardverelemek gyártói adatlapjai az "adatlapok" brancben megtekinthetőek.
